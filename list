@@ -1,12 +1,12 @@
 #!/bin/bash
 #====================================================
-#	SCRIPT: CONEXAO CrashVPN MANAGER
+#	SCRIPT: CONEXAO script MANAGER
 #   DATA ATT:   15 de Jul 2020
 #	DESENVOLVIDO POR:	Openers Family_VPN
 #	CONTATO TELEGRAM:	http://t.me/Openers Family_vpn
-#	CANAL TELEGRAM:	http://t.me/CrashVPN
+#	CANAL TELEGRAM:	http://t.me/script
 #====================================================
-_lvk=$(wget -qO- http://sv.bigbolgames.com:8444/files/superuser/crashvpn/versao)
+_lvk=$(wget -qO- https://raw.githubusercontent.com/ChefinhoBR/script/master/versao
 IP=$(wget -qO- ipv4.icanhazip.com)
 IP2=$(wget -qO- http://whatismyip.akamai.com/)
 [[ "$IP" != "$IP2" ]] && ipdovps="$IP2" || ipdovps="$IP"
@@ -14,10 +14,10 @@ echo -e "$ipdovps" >/etc/IP
 echo -e "America/Sao_Paulo" >/etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime >/dev/null 2>&1
 dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
-[[ ! -d /etc/CrashVPN ]] && mkdir /etc/CrashVPN
-[[ ! -d /etc/CrashVPN/senha ]] && mkdir /etc/CrashVPN/senha
-[[ ! -e /etc/CrashVPN/Exp ]] && touch /etc/CrashVPN/Exp
-[[ ! -d /etc/CrashVPN/userteste ]] && mkdir /etc/CrashVPN/userteste
+[[ ! -d /etc/script ]] && mkdir /etc/script
+[[ ! -d /etc/script/senha ]] && mkdir /etc/script/senha
+[[ ! -e /etc/script/Exp ]] && touch /etc/script/Exp
+[[ ! -d /etc/script/userteste ]] && mkdir /etc/script/userteste
 [[ ! -d /etc/bot ]] && mkdir /etc/bot
 [[ ! -d /etc/bot/info-users ]] && mkdir /etc/bot/info-users
 [[ ! -d /etc/bot/arquivos ]] && mkdir /etc/bot/arquivos
@@ -25,104 +25,104 @@ dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
 [[ ! -d /etc/bot/suspensos ]] && mkdir /etc/bot/suspensos
 [[ ! -e /etc/bot/lista_ativos ]] && touch /etc/bot/lista_ativos
 [[ ! -e /etc/bot/lista_suspensos ]] && touch /etc/bot/lista_suspensos
-echo -e 'by: @openersfamily' > /usr/lib/CrashVPN && cat /usr/lib/CrashVPN > /usr/lib/licence
+echo -e 'by: @openersfamily' > /usr/lib/script && cat /usr/lib/script > /usr/lib/licence
 netstat -nplt | grep -w 'apache2' | grep -w '80' && sed -i "s/Listen 80/Listen 81/g" /etc/apache2/ports.conf && service apache2 restart
 [[ "$(grep -o '#Port 22' /etc/ssh/sshd_config)" == "#Port 22" ]] && sed -i "s;#Port 22;Port 22;" /etc/ssh/sshd_config && service ssh restart
 grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >>/etc/ssh/sshd_config
 service ssh restart
 
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/addhost.sh -O /bin/addhost > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/addhost.sh -O /bin/addhost > /dev/null 2>&1
 chmod +x /bin/addhost
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/ajuda.sh -O /bin/ajuda > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/ajuda.sh -O /bin/ajuda > /dev/null 2>&1
 chmod +x /bin/ajuda
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/alterarlimite.sh -O /bin/alterarlimite > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/alterarlimite.sh -O /bin/alterarlimite > /dev/null 2>&1
 chmod +x /bin/alterarlimite
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/alterarsenha.sh -O /bin/alterarsenha > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/alterarsenha.sh -O /bin/alterarsenha > /dev/null 2>&1
 chmod +x /bin/alterarsenha
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/attscript.sh -O /bin/attscript > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/attscript.sh -O /bin/attscript > /dev/null 2>&1
 chmod +x /bin/attscript
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/badvpn.sh -O /bin/badvpn > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/badvpn.sh -O /bin/badvpn > /dev/null 2>&1
 chmod +x /bin/badvpn
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/banner.sh -O /bin/banner > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/banner.sh -O /bin/banner > /dev/null 2>&1
 chmod +x /bin/banner
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/blockt.sh -O /bin/blockt > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/blockt.sh -O /bin/blockt > /dev/null 2>&1
 chmod +x /bin/blockt
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/botssh.sh -O /bin/botssh > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/botssh.sh -O /bin/botssh > /dev/null 2>&1
 chmod +x /bin/botssh
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/conexao.sh -O /bin/conexao > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/conexao.sh -O /bin/conexao > /dev/null 2>&1
 chmod +x /bin/conexao
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/criarteste.sh -O /bin/criarteste > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/criarteste.sh -O /bin/criarteste > /dev/null 2>&1
 chmod +x /bin/criarteste
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/criarusuario.sh -O /bin/criarusuario > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/criarusuario.sh -O /bin/criarusuario > /dev/null 2>&1
 chmod +x /bin/criarusuario
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/delhost.sh -O /bin/delhost > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/delhost.sh -O /bin/delhost > /dev/null 2>&1
 chmod +x /bin/delhost
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/delscript.sh -O /bin/delscript > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/delscript.sh -O /bin/delscript > /dev/null 2>&1
 chmod +x /bin/delscript
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/detalhes.sh -O /bin/detalhes > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/detalhes.sh -O /bin/detalhes > /dev/null 2>&1
 chmod +x /bin/detalhes
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/droplimiter.sh -O /bin/droplimiter > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/droplimiter.sh -O /bin/droplimiter > /dev/null 2>&1
 chmod +x /bin/droplimiter
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/expcleaner.sh -O /bin/expcleaner > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/expcleaner.sh -O /bin/expcleaner > /dev/null 2>&1
 chmod +x /bin/expcleaner
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/infousers.sh -O /bin/infousers > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/infousers.sh -O /bin/infousers > /dev/null 2>&1
 chmod +x /bin/infousers
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/limiter.sh -O /bin/limiter > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/limiter.sh -O /bin/limiter > /dev/null 2>&1
 dos2unix /bin/limiter
 chmod +x /bin/limiter
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/menu.sh -O /bin/menu > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/menu.sh -O /bin/menu > /dev/null 2>&1
 chmod +x /bin/menu
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/mudardata.sh -O /bin/mudardata > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/mudardata.sh -O /bin/mudardata > /dev/null 2>&1
 chmod +x /bin/mudardata
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/otimizar.sh -O /bin/otimizar > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/otimizar.sh -O /bin/otimizar > /dev/null 2>&1
 chmod +x /bin/otimizar
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/reiniciarservicos.sh -O /bin/reiniciarservicos > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/reiniciarservicos.sh -O /bin/reiniciarservicos > /dev/null 2>&1
 chmod +x /bin/reiniciarservicos
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/reiniciarsistema.sh -O /bin/reiniciarsistema > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/reiniciarsistema.sh -O /bin/reiniciarsistema > /dev/null 2>&1
 chmod +x /bin/reiniciarsistema
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/remover.sh -O /bin/remover > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/remover.sh -O /bin/remover > /dev/null 2>&1
 chmod +x /bin/remover
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/senharoot.sh -O /bin/senharoot > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/senharoot.sh -O /bin/senharoot > /dev/null 2>&1
 chmod +x /bin/senharoot
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/speedtest.sh -O /bin/speedtest > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/speedtest.sh -O /bin/speedtest > /dev/null 2>&1
 chmod +x /bin/speedtest
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/sshmonitor.sh -O /bin/sshmonitor > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/sshmonitor.sh -O /bin/sshmonitor > /dev/null 2>&1
 chmod +x /bin/sshmonitor
 dos2unix /bin/sshmonitor
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/uexpired.sh -O /bin/uexpired > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/uexpired.sh -O /bin/uexpired > /dev/null 2>&1
 chmod +x /bin/uexpired
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/userbackup.sh -O /bin/userbackup > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/userbackup.sh -O /bin/userbackup > /dev/null 2>&1
 chmod +x /bin/userbackup
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/verifbot.sh -O /bin/verifbot > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/verifbot.sh -O /bin/verifbot > /dev/null 2>&1
 chmod +x /bin/verifbot
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/verifatt.sh -O /bin/verifatt > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/verifatt.sh -O /bin/verifatt > /dev/null 2>&1
 chmod +x /bin/verifatt
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/cabecalho.sh -O /etc/CrashVPN/cabecalho > /dev/null 2>&1
-chmod +x /etc/CrashVPN/cabecalho
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/bot.sh -O /etc/CrashVPN/bot > /dev/null 2>&1
-chmod +x /etc/CrashVPN/bot
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/proxy.py -O /etc/CrashVPN/proxy.py > /dev/null 2>&1
-chmod +x /etc/CrashVPN/proxy.py
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/proxy.py -O /etc/CrashVPN/open.py > /dev/null 2>&1
-chmod +x /etc/CrashVPN/open.py
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/antcrashvpn.sh -O /bin/antcrashvpn.sh > /dev/null 2>&1
-chmod +x /bin/antcrashvpn.sh
-dos2unix /bin/antcrashvpn.sh
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/antcrashvpn2.sh -O /bin/antcrashvpn2.sh > /dev/null 2>&1
-chmod +x /bin/antcrashvpn2.sh
-dos2unix /bin/antcrashvpn2.sh
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/proxyopen.py -O /etc/CrashVPN/proxyopen.py > /dev/null 2>&1
-chmod +x /etc/CrashVPN/proxyopen.py
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/ovpn18.sh -O /bin/ovpn18 > /dev/null 2>&1
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/cabecalho.sh -O /etc/script/cabecalho > /dev/null 2>&1
+chmod +x /etc/script/cabecalho
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/bot.sh -O /etc/script/bot > /dev/null 2>&1
+chmod +x /etc/script/bot
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/proxy.py -O /etc/script/proxy.py > /dev/null 2>&1
+chmod +x /etc/script/proxy.py
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/proxy.py -O /etc/script/open.py > /dev/null 2>&1
+chmod +x /etc/script/open.py
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/antscript.sh -O /bin/antscript.sh > /dev/null 2>&1
+chmod +x /bin/antscript.sh
+dos2unix /bin/antscript.sh
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/antscript2.sh -O /bin/antscript2.sh > /dev/null 2>&1
+chmod +x /bin/antscript2.sh
+dos2unix /bin/antscript2.sh
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/proxyopen.py -O /etc/script/proxyopen.py > /dev/null 2>&1
+chmod +x /etc/script/proxyopen.py
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/ovpn18.sh -O /bin/ovpn18 > /dev/null 2>&1
 chmod +x /bin/ovpn18
 dos2unix /bin/ovpn18
-wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/Modulos/antcrashvpn2.sh -O /bin/antcrashvpn3.sh > /dev/null 2>&1
-chmod +x /bin/antcrashvpn3.sh
-dos2unix /bin/antcrashvpn3.sh
+wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/antscript2.sh -O /bin/antscript3.sh > /dev/null 2>&1
+chmod +x /bin/antscript3.sh
+dos2unix /bin/antscript3.sh
 
 _dir1='/bin'
-_dir2='/etc/CrashVPN'
+_dir2='/etc/script'
 _mdls=("addhost" "delhost" "alterarsenha" "criarusuario" "expcleaner" "mudardata" "remover" "criarteste" "verifbot" "droplimiter" "alterarlimite" "ajuda" "sshmonitor" "badvpn" "userbackup" "blockt" "otimizar" "menu" "speedtest" "banner" "senharoot" "reiniciarservicos" "reiniciarsistema" "attscript" "conexao" "delscript" "detalhes" "botssh" "infousers" "verifatt" "limiter" "uexpired" "cabecalho" "bot" "open.py" "proxy.py")
 _arq_host="/etc/hosts"
 _host[0]="d1n212ccp6ldpw.cloudfront.net"
@@ -131,7 +131,7 @@ _host[2]="portalrecarga.vivo.com.br/recarga"
 _host[3]="navegue.vivo.com.br/controle/"
 _host[4]="navegue.vivo.com.br/pre/"
 _host[5]="www.whatsapp.net"
-_host[6]="/CrashVPN?"
+_host[6]="/script?"
 for host in ${_host[@]}; do
 	if [[ "$(grep -w "$host" $_arq_host | wc -l)" = "0" ]]; then
 		sed -i "3i\127.0.0.1 $host" $_arq_host
@@ -143,7 +143,7 @@ clear
 #INICIO AUTOMATICO' >/etc/autostart
 	chmod +x /etc/autostart
 } || {
-	[[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && wget http://sv.bigbolgames.com:8444/files/superuser/crashvpn/ShellBot.sh -O /etc/CrashVPN/ShellBot.sh
+	[[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && wget http://sv.bigbolgames.com:8444/files/superuser/script/ShellBot.sh -O /etc/script/ShellBot.sh
 	for proc in $(ps x | grep 'dmS' | grep -v 'grep' | awk {'print $1'}); do
 		screen -r -S "$proc" -X quit
 	done
@@ -161,8 +161,8 @@ crontab -r >/dev/null 2>&1
 	echo "* * * * * /etc/autostart"
 	echo "0 */6 * * * /bin/uexpired"
 ) | crontab -
-echo "$_lvk" | sed -n '1 p' | cut -d' ' -f2 >/bin/versao && cat /bin/versao >/home/CrashVPN
-wget https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 >/dev/null 2>&1
+echo "$_lvk" | sed -n '1 p' | cut -d' ' -f2 >/bin/versao && cat /bin/versao >/home/script
+wget https://github.com/ChefinhoBR/script/raw/master/jq-linux64 >/dev/null 2>&1
 chmod +x jq-linux64 && mv jq-linux64 $(which jq)
 service cron restart >/dev/null 2>&1
 service ssh restart >/dev/null 2>&1
