@@ -34,90 +34,90 @@ service ssh restart
 
 wget https://raw.githubusercontent.com/ChefinhoBR/script/master/addhost.sh -O /bin/addhost > /dev/null 2>&1
 chmod +x /bin/addhost
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/ajuda.sh -O /bin/ajuda > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/ajuda.sh -O /bin/ajuda > /dev/null 2>&1
 chmod +x /bin/ajuda
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/alterarlimite.sh -O /bin/alterarlimite > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/alterarlimite.sh -O /bin/alterarlimite > /dev/null 2>&1
 chmod +x /bin/alterarlimite
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/alterarsenha.sh -O /bin/alterarsenha > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/alterarsenha.sh -O /bin/alterarsenha > /dev/null 2>&1
 chmod +x /bin/alterarsenha
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/attscript.sh -O /bin/attscript > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/attscript.sh -O /bin/attscript > /dev/null 2>&1
 chmod +x /bin/attscript
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/badvpn.sh -O /bin/badvpn > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/badvpn.sh -O /bin/badvpn > /dev/null 2>&1
 chmod +x /bin/badvpn
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/banner.sh -O /bin/banner > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/banner.sh -O /bin/banner > /dev/null 2>&1
 chmod +x /bin/banner
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/blockt.sh -O /bin/blockt > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/blockt.sh -O /bin/blockt > /dev/null 2>&1
 chmod +x /bin/blockt
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/botssh.sh -O /bin/botssh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/botssh.sh -O /bin/botssh > /dev/null 2>&1
 chmod +x /bin/botssh
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/conexao.sh -O /bin/conexao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/conexao.sh -O /bin/conexao > /dev/null 2>&1
 chmod +x /bin/conexao
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/criarteste.sh -O /bin/criarteste > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/criarteste.sh -O /bin/criarteste > /dev/null 2>&1
 chmod +x /bin/criarteste
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/criarusuario.sh -O /bin/criarusuario > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/criarusuario.sh -O /bin/criarusuario > /dev/null 2>&1
 chmod +x /bin/criarusuario
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/delhost.sh -O /bin/delhost > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/delhost.sh -O /bin/delhost > /dev/null 2>&1
 chmod +x /bin/delhost
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/delscript.sh -O /bin/delscript > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/delscript.sh -O /bin/delscript > /dev/null 2>&1
 chmod +x /bin/delscript
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/detalhes.sh -O /bin/detalhes > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/detalhes.sh -O /bin/detalhes > /dev/null 2>&1
 chmod +x /bin/detalhes
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/droplimiter.sh -O /bin/droplimiter > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/droplimiter.sh -O /bin/droplimiter > /dev/null 2>&1
 chmod +x /bin/droplimiter
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/expcleaner.sh -O /bin/expcleaner > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/expcleaner.sh -O /bin/expcleaner > /dev/null 2>&1
 chmod +x /bin/expcleaner
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/infousers.sh -O /bin/infousers > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/infousers.sh -O /bin/infousers > /dev/null 2>&1
 chmod +x /bin/infousers
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/limiter.sh -O /bin/limiter > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/limiter.sh -O /bin/limiter > /dev/null 2>&1
 dos2unix /bin/limiter
 chmod +x /bin/limiter
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/menu.sh -O /bin/menu > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/menu.sh -O /bin/menu > /dev/null 2>&1
 chmod +x /bin/menu
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/mudardata.sh -O /bin/mudardata > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/mudardata.sh -O /bin/mudardata > /dev/null 2>&1
 chmod +x /bin/mudardata
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/otimizar.sh -O /bin/otimizar > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/otimizar.sh -O /bin/otimizar > /dev/null 2>&1
 chmod +x /bin/otimizar
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/reiniciarservicos.sh -O /bin/reiniciarservicos > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/reiniciarservicos.sh -O /bin/reiniciarservicos > /dev/null 2>&1
 chmod +x /bin/reiniciarservicos
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/reiniciarsistema.sh -O /bin/reiniciarsistema > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/reiniciarsistema.sh -O /bin/reiniciarsistema > /dev/null 2>&1
 chmod +x /bin/reiniciarsistema
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/remover.sh -O /bin/remover > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/remover.sh -O /bin/remover > /dev/null 2>&1
 chmod +x /bin/remover
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/senharoot.sh -O /bin/senharoot > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/senharoot.sh -O /bin/senharoot > /dev/null 2>&1
 chmod +x /bin/senharoot
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/speedtest.sh -O /bin/speedtest > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/speedtest.sh -O /bin/speedtest > /dev/null 2>&1
 chmod +x /bin/speedtest
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/sshmonitor.sh -O /bin/sshmonitor > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/sshmonitor.sh -O /bin/sshmonitor > /dev/null 2>&1
 chmod +x /bin/sshmonitor
 dos2unix /bin/sshmonitor
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/uexpired.sh -O /bin/uexpired > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/uexpired.sh -O /bin/uexpired > /dev/null 2>&1
 chmod +x /bin/uexpired
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/userbackup.sh -O /bin/userbackup > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/userbackup.sh -O /bin/userbackup > /dev/null 2>&1
 chmod +x /bin/userbackup
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/verifbot.sh -O /bin/verifbot > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/verifbot.sh -O /bin/verifbot > /dev/null 2>&1
 chmod +x /bin/verifbot
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/verifatt.sh -O /bin/verifatt > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/verifatt.sh -O /bin/verifatt > /dev/null 2>&1
 chmod +x /bin/verifatt
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/cabecalho.sh -O /etc/script/cabecalho > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/cabecalho.sh -O /etc/script/cabecalho > /dev/null 2>&1
 chmod +x /etc/script/cabecalho
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/bot.sh -O /etc/script/bot > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/bot.sh -O /etc/script/bot > /dev/null 2>&1
 chmod +x /etc/script/bot
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/proxy.py -O /etc/script/proxy.py > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/proxy.py -O /etc/script/proxy.py > /dev/null 2>&1
 chmod +x /etc/script/proxy.py
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/proxy.py -O /etc/script/open.py > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/proxy.py -O /etc/script/open.py > /dev/null 2>&1
 chmod +x /etc/script/open.py
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/antscript.sh -O /bin/antscript.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/antscript.sh -O /bin/antscript.sh > /dev/null 2>&1
 chmod +x /bin/antscript.sh
 dos2unix /bin/antscript.sh
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/antscript2.sh -O /bin/antscript2.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/antscript2.sh -O /bin/antscript2.sh > /dev/null 2>&1
 chmod +x /bin/antscript2.sh
 dos2unix /bin/antscript2.sh
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/proxyopen.py -O /etc/script/proxyopen.py > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/proxyopen.py -O /etc/script/proxyopen.py > /dev/null 2>&1
 chmod +x /etc/script/proxyopen.py
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/ovpn18.sh -O /bin/ovpn18 > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/ovpn18.sh -O /bin/ovpn18 > /dev/null 2>&1
 chmod +x /bin/ovpn18
 dos2unix /bin/ovpn18
-wget http://sv.bigbolgames.com:8444/files/superuser/script/Modulos/antscript2.sh -O /bin/antscript3.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/antscript2.sh -O /bin/antscript3.sh > /dev/null 2>&1
 chmod +x /bin/antscript3.sh
 dos2unix /bin/antscript3.sh
 
@@ -143,7 +143,7 @@ clear
 #INICIO AUTOMATICO' >/etc/autostart
 	chmod +x /etc/autostart
 } || {
-	[[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && wget http://sv.bigbolgames.com:8444/files/superuser/script/ShellBot.sh -O /etc/script/ShellBot.sh
+	[[ $(ps x | grep "bot_plus" | grep -v grep | wc -l) != '0' ]] && wget https://raw.githubusercontent.com/ChefinhoBR/script/master/ShellBot.sh -O /etc/script/ShellBot.sh
 	for proc in $(ps x | grep 'dmS' | grep -v 'grep' | awk {'print $1'}); do
 		screen -r -S "$proc" -X quit
 	done
