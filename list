@@ -25,7 +25,7 @@ dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
 [[ ! -d /etc/bot/suspensos ]] && mkdir /etc/bot/suspensos
 [[ ! -e /etc/bot/lista_ativos ]] && touch /etc/bot/lista_ativos
 [[ ! -e /etc/bot/lista_suspensos ]] && touch /etc/bot/lista_suspensos
-echo -e 'by: @openersfamily' > /usr/lib/script && cat /usr/lib/script > /usr/lib/licence
+echo -e 'by: @redytvpn' > /usr/lib/script && cat /usr/lib/script > /usr/lib/licence
 netstat -nplt | grep -w 'apache2' | grep -w '80' && sed -i "s/Listen 80/Listen 81/g" /etc/apache2/ports.conf && service apache2 restart
 [[ "$(grep -o '#Port 22' /etc/ssh/sshd_config)" == "#Port 22" ]] && sed -i "s;#Port 22;Port 22;" /etc/ssh/sshd_config && service ssh restart
 grep -v "^PasswordAuthentication" /etc/ssh/sshd_config >/tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
