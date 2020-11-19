@@ -135,7 +135,7 @@ rm redyt* > /dev/null 2>&1
 rm list* > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
-wget https://raw.githubusercontent.com/ChefinhoBR/script/master/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/menu > /dev/null 2>&1
 clear
 echo ""
 cd $HOME
