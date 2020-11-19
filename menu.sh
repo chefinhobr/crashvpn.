@@ -2,7 +2,7 @@
 clear
 [[ $EUID -ne 0 ]] && {
 echo -e "\033[1;33mDesculpe, \033[1;33mvocê precisa executar como root\033[0m"
-rm -rf $HOME/Plus > /dev/null 2>&1; exit 0
+rm -rf $HOME/script > /dev/null 2>&1; exit 0
 }
 _lnk=$(echo '9:q-7gs1.o1%5:f1.6q5.×9%y4:1'|sed -e 's/[^0-9.]//ig'| rev); _Ink=$(echo '/3×u3#s87r/l32o4×c1a×l1/83×l24×i0b×'|sed -e 's/[^a-z/]//ig'); _1nk=$(echo '/3×u3#s×87r/83×l2×4×i0b×'|sed -e 's/[^a-z/]//ig')
 cd $HOME
@@ -36,7 +36,7 @@ function verif_key () {
 krm=$(echo '5:q-3gs2.o7%8:1'|rev); chmod +x $_Ink/list > /dev/null 2>&1
 [[ ! -e "$_Ink/list" ]] && {
   echo -e "\n\033[1;31mKEY INVÁLIDA!\033[0m"
-  rm -rf $HOME/Plus > /dev/null 2>&1
+  rm -rf $HOME/script > /dev/null 2>&1
   sleep 2
   clear; exit 1
 }
@@ -64,7 +64,7 @@ echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m 16983:16085\033[0m" ; rm $_Ink/li
 sleep 3s
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/SSHPLUS-MANAGER-FREE/master/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/ChefinhoBR/script/master/versao > /dev/null 2>&1
 #-----------------------------------------------------------------------------------------------------------------
 echo -e "\n\033[1;32mKEY VALIDA!\033[1;32m"
 sleep 1s
@@ -129,4 +129,4 @@ echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \03
 echo ""
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
 echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@SSHPLUS\033[0m"
-rm -rf $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
+rm -rf $HOME/script && cat /dev/null > ~/.bash_history && history -c
