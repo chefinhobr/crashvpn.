@@ -227,7 +227,7 @@ def main(host=IP, port=PORT):
     print "\033[0;34mâ”"*8,"\033[1;32m PROXY SOCKS","\033[0;34mâ”"*8,"\n"
     print "\033[1;33mIP:\033[1;32m " + IP
     print "\033[1;33mPORTA:\033[1;32m " + str(PORT) + "\n"
-    print "\033[0;34mâ”"*10,"\033[1;32m CrashVPN","\033[0;34mâ”\033[1;37m"*11,"\n"
+    print "\033[0;34mâ”"*10,"\033[1;32m redyt","\033[0;34mâ”\033[1;37m"*11,"\n"
     server = Server(IP, PORT)
     server.start()
     while True:
